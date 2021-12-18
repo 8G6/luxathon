@@ -2,7 +2,7 @@ $ = (a) => document.querySelector(a)
 
 h=0
 m=0
-s=(new Date('December 19, 2021 10:00:00').getTime()-new Date().getTime())/1000;
+s=(new Date('December 19, 2021 10:55:00').getTime()-new Date().getTime())/1000;
 
 cs=0
 
@@ -43,19 +43,5 @@ function fix(a,s){
 
 c=0
 
-setInterval(()=>{
-   if(new Date('December 18, 2021 10:00:00').getTime()==new Date().getTime()){
-    s=(new Date('December 19, 2021 10:00:00').getTime()-new Date().getTime())/1000;
-     setInterval(time,1000)
-     $('#sta').innerHTML = 'Luxathon will conclude in'
-   }
-   else{
-    c++
-    if(c==1){
-      s=(new Date('December 18, 2021 10:00:00').getTime()-new Date().getTime())/1000
-      setInterval(time,1000)
-      $('#sta').innerHTML = 'Luxathon will start in'
-    }
-   }
-},1)
+setInterval(time,1000)
 
