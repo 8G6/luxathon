@@ -41,9 +41,5 @@ function fix(a,s){
   return s=='s' || s=='m' ? Math.floor(a*100/60) : Math.floor(a*100/24)
 }
 
-setInterval(()=>{
-  if(new Date().getTime() == new Da)
-})
-
 setInterval(time,1000)
 
