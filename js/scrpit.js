@@ -47,12 +47,14 @@ setInterval(()=>{
    if(new Date('December 18, 2021 10:00:00').getTime()==new Date().getTime()){
     s=(new Date('December 19, 2021 10:00:00').getTime()-new Date().getTime())/1000;
      setInterval(time,1000)
+     $('#sta').innerHTML = 'Luxathon will conclude in'
    }
    else{
     c++
     if(c==1){
       s=(new Date('December 18, 2021 10:00:00').getTime()-new Date().getTime())/1000
       setInterval(time,1000)
+      $('#sta').innerHTML = 'Luxathon will start in'
     }
    }
 },1)
