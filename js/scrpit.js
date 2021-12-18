@@ -2,7 +2,7 @@ $ = (a) => document.querySelector(a)
 
 h=0
 m=0
-s=(new Date('December 19, 2021 12:00:00').getTime()-new Date().getTime())/1000;
+s=(new Date('December 19, 2021 12:15:00').getTime()-new Date().getTime())/1000;
 
 cs=0
 
