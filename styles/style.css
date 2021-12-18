@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+#n{
+  color:white;
+}
+
 body {
   display: flex;
   justify-content: center;

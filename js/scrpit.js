@@ -2,7 +2,8 @@ $ = (a) => document.querySelector(a)
 
 h=0
 m=0
-s=24*60*60
+s=(new Date('December 19, 2021 10:00:00').getTime()-new Date().getTime())/1000;
+
 cs=0
 
 function check(t){
@@ -40,4 +41,15 @@ function fix(a,s){
   return s=='s' || s=='m' ? Math.floor(a*100/60) : Math.floor(a*100/24)
 }
 
-setInterval(time,1000)
+
+c=0
+setInterval(()=>{
+  if(new Date('December 18, 2021 10:00:00').getTime()==new Date().getTime())
+  {
+    setInterval(time,1000)
+    $('#head').innerHTML = 'Time Remining'
+  }
+  else{
+    $('.container').innerHTML='<h1 id="n">Hacthon is not yet started</h1>'
+  }
+},1)
