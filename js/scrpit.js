@@ -2,7 +2,7 @@ $ = (a) => document.querySelector(a)
 
 h=0
 m=0
-s=(new Date('December 19, 2021 10:55:00').getTime()-new Date().getTime())/1000;
+s=(new Date('December 19, 2021 11:45:00').getTime()-new Date().getTime())/1000;
 
 cs=0
 
@@ -41,7 +41,9 @@ function fix(a,s){
   return s=='s' || s=='m' ? Math.floor(a*100/60) : Math.floor(a*100/24)
 }
 
-c=0
+setInterval(()=>{
+  if(new Date().getTime() == new Da)
+})
 
 setInterval(time,1000)
 
